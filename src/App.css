@@ -1,14 +1,63 @@
 /* top nav bar */
 .top-nav {
-  height: 100px;
+  height: 5rem;
   width: 100vw;
   background-color:black;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
+  z-index: 50;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.top-nav play-now {
+  position: absolute;
+  right:20px;
+}
+
+.top-nav ul {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.top-nav > img {
+  width: 50px;
+}
+
 /* ============= */
+
+/* ShowPage.js css */
+.show-page {
+  position: relative;
+  top: 5rem;
+}
+.show-page > img{
+  position: absolute;
+  width: 80vw;
+}
+
+.show-page .miss-fortune{
+  z-index: 5;
+}
+
+.show-page .play-now {
+  position: relative;
+  bottom: 0;
+}
+
+.show-page .available-on {
+  position: relative;
+  bottom: 0;
+}
+/* =============== */
+
+/* be-legendary and under */
+.be-legendary {
+  position: absolute;
+  top: 10rem;
+  
+}
+/* ================ */

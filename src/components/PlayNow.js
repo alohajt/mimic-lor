@@ -5,8 +5,8 @@ export default class PlayNow extends Component {
 
     render(){
         return(
-            <div>
-
+            <div className="play-now">
+                <button /> Play Now
             </div>
         )
     }
