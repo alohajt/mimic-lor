@@ -15,15 +15,15 @@ export default class TopNav extends Component {
             <div className="top-nav">
                 
                 <Dropdown/>
-                <img onClick={()=>{window.location.href="https://playruneterra.com/en-us/"}}
-                src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt8ba1ec1b0013e362/5ea53af4ae23d30cd1dfb3e4/lor-logo.png?&height=50&disable=upscale"
-                />
+                <span className="riot-logo" onClick={()=>{window.location.href="https://playruneterra.com/en-us/"}}/>
                 <div className="lor-logo">
-                    <img alt="lor-logo"/>
+                    <img alt="lor-logo" src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt8ba1ec1b0013e362/5ea53af4ae23d30cd1dfb3e4/lor-logo.png?&height=50&disable=upscale"
+                    onClick={()=>window.location.href="https://playruneterra.com/en-us/"} />
                 </div>
-                <News/>News
+                <div>|</div>
+                <News/>NEWS
                 <Support/>SUPPORT
-                <PlayNow/>PLAY NOW
+                <PlayNow/>
             </div>
         )
     }

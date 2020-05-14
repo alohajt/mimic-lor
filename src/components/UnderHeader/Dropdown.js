@@ -38,7 +38,8 @@ export default class Dropdown extends Component{
             {
               this.state.displayMenu ? (
                 <ul>
-                    <li><a className="game-titles" >RIOT GAMES</a></li>
+                    <li><a className="game-titles" >☰</a></li>
+                    
 
                     <li className="LOR-PC-mobile">
                     <img onClick={()=>{window.location.href="https://playruneterra.com/en-us/"}} 

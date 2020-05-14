@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import TopNav from './components/TopNav'
+import Dropdown from './components/UnderHeader/Dropdown'
 import PlayNow from './components/PlayNow'
 
 import ShowPage from './components/ShowPage'
@@ -15,6 +16,7 @@ class App extends Component {
       <div>
         <title>playruneterra</title>
         <TopNav />
+        <Dropdown/>
         <ShowPage/>
         <BeLegendary/>
       </div>
