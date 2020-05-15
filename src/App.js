@@ -7,6 +7,7 @@ import PlayNow from './components/PlayNow'
 
 import ShowPage from './components/ShowPage'
 import BeLegendary from './components/BeLegendary'
+import ChooseYourChamp from './components/ChooseYourChamp'
 
 class App extends Component {
   state = []
@@ -19,6 +20,7 @@ class App extends Component {
         <Dropdown/>
         <ShowPage/>
         <BeLegendary/>
+        <ChooseYourChamp/>
       </div>
     )
   }

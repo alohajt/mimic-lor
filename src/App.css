@@ -19,6 +19,15 @@ html {
   justify-content: space-evenly;
 }
 
+/* ？？？？ */
+.triangle {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  border: 6px solid transparent;
+  border-top: 6px solid #123456;
+}
+
 .top-nav .riot-logo {
   width: 160px;
   height: 160px;
@@ -98,14 +107,14 @@ html {
 
 .show-page.riot-logo {  
   width: 100%;
+  z-index: 3;
 }
 .show-page > img{
  
-  width: 10%;
+  width: 40%;
 }
 
-
-.show-page.miss-fortune{
+.miss-fortune{
   z-index: 5;
 }
 
@@ -137,8 +146,90 @@ html {
 
 /* be-legendary and under */
 .be-legendary {
+  
+  text-align: center;
   color: blanchedalmond;
-  position: relative;
-  background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/general/background-dark-grey-noise.jpg");
+  background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/general/background-dark-grey-noise.jpg") ;
 }
+
+.be-legendary-title {
+  color: #C49250;
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.be-legendary-content {
+  color: #d5d2c9;
+}
+
+.three-images-container {
+  display: flex;
+  flex-direction: row;
+}
+.three-images-container  img {
+  max-width: 200px;
+}
+.intro-card {
+  margin: 5rem;
+  max-width: 10rem;
+  max-height: 20rem;
+  padding: 1.5rem 3rem 4.6rem;
+  background: linear-gradient(0deg,#c6b7a0,#cfc6bf 100%);
+}
+
+.intro-card-image {
+  width: 100%;
+}
+
+.intro-card-title {
+  color: #68482c;
+  margin-bottom: .6em;
+  width: 110%;
+  margin-left: -5%;
+  font-size: .5rem;
+  letter-spacing: .02em;
+  font-family: Oswald,Arial,Georgia,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.intro-card-content {
+  color:#2b282c;
+}
+
+/* .skill-above-all-image {
+  width: 180%;
+} */
 /* ================ */
+
+/* choose your champ */
+.choose-your-champ {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: blanchedalmond;
+  background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/general/background-dark-grey-noise.jpg") ;
+
+}
+
+.full-champ-image {
+  width: 80vw;
+}
+
+.region-icon {
+  width: 5%;
+}
+
+.title-info {
+  
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: .8rem 0 1.4rem;
+  box-sizing: border-box;
+  color: #c0b6a0;
+  width: 200px;
+}
