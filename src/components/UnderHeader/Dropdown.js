@@ -34,7 +34,7 @@ export default class Dropdown extends Component{
     render() {
         return (
           <div className="riot-games-dropdown">
-            <div className="button" onClick={this.showDropdownMenu}> Riot Games </div>
+            <div className="button" onClick={this.showDropdownMenu}> ▼ </div>
             {
               this.state.displayMenu ? (
                 <ul>

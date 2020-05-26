@@ -1,5 +1,8 @@
 html {
-  position: relative;
+  justify-content: center;
+}
+.webpage {
+  justify-content: center;
 }
 
 /* top nav bar */
@@ -19,28 +22,20 @@ html {
   justify-content: space-evenly;
 }
 
-/* ？？？？ */
-.triangle {
-  position: absolute;
-  top: 16px;
-  right: 18px;
-  border: 6px solid transparent;
-  border-top: 6px solid #123456;
-}
-
 .top-nav .riot-logo {
   width: 160px;
   height: 160px;
   background: url("https://lolstatic-a.akamaihd.net/riotbar/live/1.1.1/images/navigation/fistsprite.png") 0 -2400px no-repeat;
-  transition: background-position 0.25s steps(15, end);
-  /* transition-property: background-position;
+  /* transition: background-position 0.25s steps(15, end); */
+  transition-property: background-position;
   transition-duration: 0.25s;
-  transition-delay: 0s; */
+  transition-timing-function: step(15) ;
+  transition-delay: 0s; 
   transform: scale(0.33);
 
   position: absolute;
-  top: -55px;
-  left: -55px;
+  /* top: px; */
+  left: -2.5rem;
 
 }
 
@@ -49,15 +44,15 @@ html {
   font-weight: 600;
   border-radius: 2px;
   text-align: center;
-  line-height: 16px;
+  /* line-height: 16px; */
   height: 41px;
-  padding: 12px 0;
+  /* padding: 12px 0; */
   position: relative;
   min-width: 129px; 
   max-width: 220px;
   z-index: 0;
   text-overflow: ellipsis;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: white;
   background-color: #986F45 ;
   border-color: #986F45;
@@ -81,11 +76,18 @@ html {
 .riot-games-dropdown {
   display: flex;
   flex-direction: column;
-
+  color: #68482c;
+}
+.riot-games-dropdown .button {
+  color: #bbb;
+  width: 10%;
+}
+.riot-games-dropdown .button:hover {
+  color: white;
 }
 
-.riot-games-dropdown > img {
-  width: 20%;
+.LOR-PC-mobile > img {
+  width:2px;
 }
 /* ================ */
 
@@ -94,7 +96,7 @@ html {
   /* box-sizing: border-box; */
   width: 100vw;
   height: 100vh;
-  margin-top: 5rem;
+  margin-top: 3.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,27 +120,44 @@ html {
   position: absolute;
 }
 .miss-fortune{
-  z-index: 5;
+  z-index: 3;
 }
 
-.show-page.play-now-button {
+.show-page .play-now-button {
+  /* border-radius: 2px;
+  z-index: 4;
+  background-image: linear-gradient(-100deg,rgba(250,218,109,.15) 5%,rgba(229,167,87,0)); */
+  font-size: 11px;
+  font-weight: 600;
   border-radius: 2px;
-  z-index: 1;
-  background-image: linear-gradient(-100deg,rgba(250,218,109,.15) 5%,rgba(229,167,87,0));
+  text-align: center;
+  /* line-height: 16px; */
+  height: 41px;
+  /* padding: 12px 0; */
+  position: relative;
+  min-width: 129px; 
+  max-width: 220px;
+  z-index: 0;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  color: white;
+  background-color: #986F45 ;
+  border-color: #986F45;
 }
 
 .available-on {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 100vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
   
 }
 
 .available-on-text{
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0 0 1rem;
   font-family: Open Sans,sans-serif;
   color: #696053;
@@ -149,6 +168,7 @@ html {
 .available-on-icons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 /* =============== */
 
@@ -295,10 +315,17 @@ html {
 .choose-your-champ {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: blanchedalmond;
   background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/general/background-dark-grey-noise.jpg") ;
 
+}
+.choose-your-champ .champ-option{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .full-champ-image {
@@ -321,3 +348,22 @@ html {
   color: #c0b6a0;
   width: 200px;
 }
+
+/* register to play */
+.register-to-play {
+  /* display: none; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  /* justify-content: center; */
+}
+
+.account-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* ++++++++++++= */
