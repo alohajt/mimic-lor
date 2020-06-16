@@ -1,369 +1,258 @@
-html {
-  justify-content: center;
-}
-.webpage {
-  justify-content: center;
-}
-
-/* top nav bar */
-.top-nav {
-  height: 5rem;
-  width: 100vw;
+* {
   margin: 0;
-  background-color:black;
+  padding: 0;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+  background-color: pink;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+/* top nav start  */
+.top-nav {
+  height: 80px;
+  width: 1200px;
+  background-color: black;
+}
+.header {
+  float: left;
+}
+.header ul li {
+  float: left;
+  margin-left: 40px;
+}
+
+.header ul li img {
+  margin-top: 14px;
+}
+
+.header ul li a {
+  display: block;
+  height: 80px;
+  line-height: 80px;
   color: white;
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.top-nav .riot-logo {
-  width: 160px;
-  height: 160px;
-  background: url("https://lolstatic-a.akamaihd.net/riotbar/live/1.1.1/images/navigation/fistsprite.png") 0 -2400px no-repeat;
-  /* transition: background-position 0.25s steps(15, end); */
-  transition-property: background-position;
-  transition-duration: 0.25s;
-  transition-timing-function: step(15) ;
-  transition-delay: 0s; 
-  transform: scale(0.33);
-
-  position: absolute;
-  /* top: px; */
-  left: -2.5rem;
-
+.header ul li a:hover {
+  border-bottom: 2px solid #c49250;
 }
 
-.top-nav .play-now-button {
-  font-size: 11px;
-  font-weight: 600;
-  border-radius: 2px;
-  text-align: center;
-  /* line-height: 16px; */
-  height: 41px;
-  /* padding: 12px 0; */
-  position: relative;
-  min-width: 129px; 
-  max-width: 220px;
-  z-index: 0;
-  text-overflow: ellipsis;
-  /* margin-top: 20px; */
+.top-nav button {
+  float: right;
+  width: 150px;
+  height: 42px;
   color: white;
-  background-color: #986F45 ;
-  border-color: #986F45;
-
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 40px;
+  margin-top: 18px;
+  background-color: #c49250;
+  border: 0;
+  border-radius: 3px;
 }
+/* top nav end  */
 
-.top-nav ul {
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.top-nav > img {
-  width: 50px;
-}
-
-/* ============= */
-
-
-/* top-nav dropdown bar */
-.riot-games-dropdown {
-  display: flex;
-  flex-direction: column;
-  color: #68482c;
-}
-.riot-games-dropdown .button {
-  color: #bbb;
-  width: 10%;
-}
-.riot-games-dropdown .button:hover {
-  color: white;
-}
-
-.LOR-PC-mobile > img {
-  width:2px;
-}
-/* ================ */
-
-/* ShowPage.js css */
+/* show page start  */
 .show-page {
-  /* box-sizing: border-box; */
-  width: 100vw;
-  height: 100vh;
-  margin-top: 3.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/hero/hero-background.jpg");
-
-  /* background: linear-gradient(transparent 60%,#e4e0da); */
+  background: url("https://playruneterra.com/assets/bea93f03d15a03aee6c2643ea0ae9331def656ad/static/image/hero/hero-background.jpg")
+    round top center;
+}
+.show-page .image-container {
+  width: 500px;
+  margin: 0 auto;
 }
 
-
-.show-page.riot-logo {  
+.show-page img {
   width: 80%;
-  z-index: 3;
-}
-.show-page > img{
- 
-  width: 40%;
+  margin: 0 auto;
 }
 
-.lee-sin {
-  position: absolute;
-}
-.miss-fortune{
-  z-index: 3;
-}
-
-.show-page .play-now-button {
-  /* border-radius: 2px;
-  z-index: 4;
-  background-image: linear-gradient(-100deg,rgba(250,218,109,.15) 5%,rgba(229,167,87,0)); */
-  font-size: 11px;
-  font-weight: 600;
-  border-radius: 2px;
-  text-align: center;
-  /* line-height: 16px; */
-  height: 41px;
-  /* padding: 12px 0; */
-  position: relative;
-  min-width: 129px; 
-  max-width: 220px;
-  z-index: 0;
-  text-overflow: ellipsis;
-  margin-top: 20px;
+.show-page button {
+  display: block;
+  font-family: Oswald, Arial, Georgia, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  width: 150px;
+  height: 42px;
   color: white;
-  background-color: #986F45 ;
-  border-color: #986F45;
+  font-weight: 700;
+  background-color: #c49250;
+  border: 0;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
-.available-on {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  
-}
-
-.available-on-text{
-  font-size: 1rem;
-  margin: 0 0 1rem;
-  font-family: Open Sans,sans-serif;
+.show-page .available-on .available-on-text {
+  font-family: Open Sans, sans-serif;
   color: #696053;
-}
-
-
-
-.available-on-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-/* =============== */
-
-/* be-legendary and under */
-* {box-sizing:border-box}
-.be-legendary {
-  
+  font-size: 18px;
+  font-weight: 700;
   text-align: center;
-  color: blanchedalmond;
-  background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/general/background-dark-grey-noise.jpg") ;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.be-legendary-title {
-  color: #C49250;
-  margin-top: 0;
-  padding-top: 2rem;
+.available-on-icons ul {
+  width: 400px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
 }
 
-.be-legendary-content {
+.available-on-icons ul li {
+  float: left;
+  margin: 0 6px;
+}
+
+.available-on-icons img {
+  width: 120px;
+}
+
+/* show page end  */
+
+/* be-legendary start  */
+.be-legendary {
+  background: url("https://playruneterra.com/assets/bea93f03d15a03aee6c2643ea0ae9331def656ad/static/image/general/background-black-noise.jpg")
+  repeat;
+}
+.be-legendary h4 {
+  color: #c49250;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.be-legendary p {
+  padding: 8px 0;
+  text-align: center;
   color: #d5d2c9;
 }
 
-.three-images-container {
-  /* display: flex;
-  flex-direction: row; */
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.three-images-container  img {
-  max-width: 200px;
-}
-.intro-card {
-  /* margin: 5rem;
-  max-width: 10rem;
-  max-height: 20rem;
-  padding: 1.5rem 3rem 4.6rem;
-  background: linear-gradient(0deg,#c6b7a0,#cfc6bf 100%); */
-  display: none;
+.three-images-container ul {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.intro-card-image {
-  width: 100%;
+.three-images-container ul li {
+  float: left;
+  width: 350px;
+  height: 500px;
+  text-align: center;
+  margin: 0 25px;
+  background-color: #d5d2c9;
 }
 
-.intro-card-title {
-  color: #68482c;
-  margin-bottom: .6em;
-  width: 110%;
-  margin-left: -5%;
-  font-size: .5rem;
-  letter-spacing: .02em;
-  font-family: Oswald,Arial,Georgia,sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  box-sizing: border-box;
+.three-images-container ul li .intro-card-title {
+  font-family: Oswald, Arial, Georgia, sans-serif;
+  color: #696053;
+  font-size: 24px;
+  padding: 8px 0;
 }
 
-.intro-card-content {
-  color:#2b282c;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
+.three-images-container ul li .intro-card-content {
+  font-family: "Open Sans", sans-serif;
+  color: black;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  margin: 15px 15px;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* Caption text */
-.intro-card-content {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+.intro-card img {
+  float: left;
   width: 100%;
-  text-align: center;
+
+  /* min-height: 350px; */
+}
+/* be-legendary end  */
+
+/* footer start  */
+.footer{
+  background-color: black;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
+.abouts ul{
+  width: 490px;
+  /* background-color: aqua; */
+  margin: 0 auto;
+}
+
+.abouts ul li {
+  float: left;
+}
+
+.abouts ul li a {
+  display: block;
+  height: 28px;
+  color: gray;
   font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  font-weight: 700;
+  margin:30px 10px 10px 10px;
+}
+.abouts ul li a:hover {
+  color: white;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-/* ================ */
-
-/* choose your champ */
-.choose-your-champ {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.footer p {
   text-align: center;
-  color: blanchedalmond;
-  background-image: url("https://playruneterra.com/assets/45ccd50389e0d91555d3d2a6d2d83a2d3ca8e297/static/image/general/background-dark-grey-noise.jpg") ;
-
-}
-.choose-your-champ .champ-option{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  font-size: 13px;
+  color: gray;
+  padding: 30px 0;
 }
 
-.full-champ-image {
-  width: 80vw;
+.footer>ul {
+  width: 210px;
+  /* background-color: aqua; */
+  margin: 0 auto;
 }
 
-.region-icon {
-  width: 5%;
+.footer>ul>li {
+  float: left;
 }
 
-.title-info {
-  
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: .8rem 0 1.4rem;
-  box-sizing: border-box;
-  color: #c0b6a0;
-  width: 200px;
+.footer>ul>li>a {
+  display: block;
+  height: 30px;
+  color: gray;
+  font-size: 12px;
+  margin: 0 15px 30px 15px;
+  text-decoration: underline;
 }
 
-/* register to play */
-.register-to-play {
-  /* display: none; */
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0;
-  /* justify-content: center; */
+.teen {
+  /* background-color: purple; */
+  width: 215px;
+  height: 200px;
+  margin: 0 auto;
 }
 
-.account-status {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.teen img{
+  float: left;
 }
-
-/* ++++++++++++= */
+.teen p {
+  text-align: start;
+  float: left;
+  padding: 0;
+  padding-left: 5px;
+}
+/* footer end  */

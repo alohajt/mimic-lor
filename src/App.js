@@ -4,6 +4,7 @@ import './App.css';
 import TopNav from './components/TopNav'
 import Dropdown from './components/UnderHeader/Dropdown'
 import PlayNow from './components/PlayNow'
+import Footer from './components/Footer'
 
 import ShowPage from './components/ShowPage'
 import BeLegendary from './components/BeLegendary'
@@ -18,11 +19,9 @@ class App extends Component {
       <div className="webpage">
         <title>playruneterra</title>
         <TopNav />
-        <Dropdown/>
         <ShowPage/>
-        <BeLegendary/>
-        <ChooseYourChamp/>
-        <RegisterToPlay/>
+        <BeLegendary />
+        <Footer/>
       </div>
     )
   }
